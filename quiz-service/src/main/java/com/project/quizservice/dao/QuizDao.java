@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface QuizDao extends JpaRepository<Quiz, Integer> {
 
-	List<Quiz> findByName(String name);
+//	List<Quiz> findByName(String name);
 
 }
