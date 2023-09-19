@@ -11,12 +11,12 @@ public class Question {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String questionTitle;
+	private String question_title;
 	private String option1;
 	private String option2;
 	private String option3;
 	private String option4;
-	private String rightAnswer;
+	private String right_answer;
 	private String difficultylevel;
 	private String category;
 
@@ -26,14 +26,6 @@ public class Question {
 
 	public void setId(Integer id) {
 		this.id = id;
-	}
-
-	public String getQuestionTitle() {
-		return questionTitle;
-	}
-
-	public void setQuestionTitle(String questionTitle) {
-		this.questionTitle = questionTitle;
 	}
 
 	public String getOption1() {
@@ -68,14 +60,6 @@ public class Question {
 		this.option4 = option4;
 	}
 
-	public String getRightAnswer() {
-		return rightAnswer;
-	}
-
-	public void setRightAnswer(String rightAnswer) {
-		this.rightAnswer = rightAnswer;
-	}
-
 	public String getDifficultylevel() {
 		return difficultylevel;
 	}
@@ -90,6 +74,22 @@ public class Question {
 
 	public void setCategory(String category) {
 		this.category = category;
+	}
+
+	public String getQuestion_title() {
+		return question_title;
+	}
+
+	public void setQuestion_title(String question_title) {
+		this.question_title = question_title;
+	}
+
+	public String getRight_answer() {
+		return right_answer;
+	}
+
+	public void setRight_answer(String right_answer) {
+		this.right_answer = right_answer;
 	}
 
 }
